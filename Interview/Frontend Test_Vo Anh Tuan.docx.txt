@@ -1,0 +1,175 @@
+﻿Empower e-Commerce brands to launch, grow and succeed
+Frontend Questions 
+
+
+Name:………………………………………DOB:…………………………
+Date interview:…………………………….
+
+
+
+
+Đây là bộ câu hỏi trao đổi về kỹ thuật, xin mời các ứng viên đọc và chuẩn bị trước khi trao đổi về vị trí tuyển dụng 30p. 
+
+
+Bạn hãy đọc lướt các câu hỏi và đánh dấu tích ( ✔ ) vào câu bạn trả lời được, đánh dấu ( X ) vào câu bạn không trả lời được và để trống (        ) câu bạn không hiểu nghĩa
+
+
+1. General
+   1. What actions have you personally taken on recent projects to increase maintainability of your code? Refractors code, weekly review, divide complex logical components into smaller components which serve only one purpose
+   2. Talk about your preferred development environment
+   3. How would you optimize a website's assets/resources?
+   4. Name 3 ways to decrease page load (perceived or actual load time).
+2. HTML
+   1. Describe the difference between a cookie, sessionStorage and localStorage
+- Cookie: small size (4kb), send data to server, can be read from client side but mainly is used to send data to server. Expires time limit. Can be create and set by JS
+- Session storage: có giới hạn thời gian lưu trữ, bị xóa khi đóng trang, có thể lưu trữ dung lượng khoảng 5MB, có thể đọc từ phía client side
+- Local storage: Không bị xóa, chỉ bị xóa bằng JS, dung lượng lưu trữ lớn, có thể đọc ở client side. Không giới hạn thời gian lưu trữ.
+   2. Describe the difference between <script>, <script async> and <script defer>.
+   3. Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
+   4. What is progressive rendering? What is lazy load? 
+   3. CSS
+   1. What is CSS selector specificity and how does it work?
+   2. What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+   3. Describe Floats and how they work.
+   4. Describe z-index and how stacking context is formed.
+   5. How would you approach fixing browser-specific styling issues?
+   6. How do you serve your pages for feature-constrained browsers?
+   7. What are the different ways to visually hide content (and make it available only for screen readers)?
+   8. Have you ever used a grid system, and if so, what do you prefer?
+   9. Have you used or implemented media queries or mobile specific layouts/CSS?
+   10. Can you give an example of an @media property other than screen?
+   11. What does * { box-sizing: border-box; } do? What are its advantages?
+   12. What is the CSS display property and can you give a few examples of its use?
+   13. What's the difference between inline and inline-block?
+   14. What's the difference between a relative, fixed, absolute and statically positioned element?
+   15. Have you played around with the new CSS Flexbox or Grid specs?
+   16. Have you ever worked with retina graphics? If so, when and what techniques did you use?
+   4. JS (required for level 4 and above)
+   1. Explain event delegation in jQuery or similar language
+   2. Explain how `this` works in JavaScript
+   3. What's the difference between a variable that is: null, undefined or undeclared?
+   4. How do you organize your code? (module pattern, classical inheritance?) // Module, abstract base, interface,..
+   5. Difference between: function Person(){}, var person = Person(), and var person = new Person()? // function person(){}: function constructor, var person= Person() : khai báo obj ko có từ khóa new => lỗi
+   6. Explain Ajax in as much detail as possible.
+   7. Explain how JSONP works (and how it's not really Ajax). 
+   8. Have you ever used JavaScript templating? // JSX
+   9. How to stop open a link in <a href=’...’> tag using jquery
+   10. What is the difference between == and ===?
+So sánh yếu và mạnh.
+Ex: 1 == ‘1 : true
+Ex: 1 === ‘1’ : false
+   11. Explain what a single page app is and how to make one SEO-friendly.
+Single page app: trang web hoạt động để tăng trải nghiệm người dùng. ⇒ seo sẽ giảm do công cụ tìm kiếm sẽ ko tìm thấy đc dữ liệu trong trang web.
+⇒ công cụ dùng Google Analysis
+   12. What are the pros and cons of using Promises instead of callbacks?
+Lợi ích: Promise tránh trường hợp calback hall (nhưng vẫn có thể xảy ra)
+Promise code dễ đọc hơn.
+Promise sẽ khó dùng hơn callback.
+   13. What tools and techniques do you use debugging JavaScript code? // Debug trực tiếp trên trình duyệt.
+   14. Explain the difference between synchronous and asynchronous functions.
+Cách thức hoạt động:
+   * Sync: Sẽ thực thi từ trên xuống dưới, khi câu lệnh trên chưa đc thực hiện thì câu lệnh dưới vẫn phải chờ ⇒ mất thời gian chờ đợi
+   * Asnc: bất đồng bộ, tức câu lệnh sau sẽ chạy mà ko cần biết câu lệnh trước đã hoàn thành.
+   1. Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
+Khác nhau: 1 hàm và 1 biến khai báo hàm
+   2. What are the differences between variables created using let, var or const?
+   * Phạm vi truy cập biến: let chỉ tồn tại trong express chứa nó, 
+   * var thì là biến toàn cục nên tồn tại trong cả chương trình hoặc là trong toàn bộ function(nếu đc khởi tạo trong hàm)
+   * Const: biến hằng số và ko bị thay đổi khi đã khởi tạo(chỉ thay đổi được refrence của nó: nếu là kiểu dữ liệu tham chiếu)
+   1. What are the differences between ES6 class and ES5 function constructors?
+   * ES6: Thêm class, export, import module, arrow function, destructring, default value
+   1. Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions? 
+   * Arrow function: ko có this(ko bị nhầm lẫn phạm vi truy cập biến this), cú pháp ngắn gọn.
+   1. What advantage is there for using the arrow syntax for a method in a constructor? // ko nên dùng
+   2. Can you give an example for destructuring an object or an array?
+   * Destructuring a object
+Ex: let obj = { x: 1, y: 2} ; let {x, y} = obj => x = 1, y = 2
+   * Destructuring a array
+Ex: let arr = [1 , 2]; let [x, y] = arr => x = 1; y = 2
+   5. Testing (required for level 5 and above)
+   1. What are some advantages/disadvantages to testing your code? 
+   2. What tools would you use to test your code's functionality? mocha
+   3. What is the difference between a unit test and a functional/integration test? // chỉ test các hàm đơn giản, một chức năng con duy nhất
+   4. What is the purpose of a code style linting tool? // dễ đọc, dễ tìm bug, dễ kiểm tra code
+   6. Performance (required for level 6 and above)
+   1. What tools would you use to find a performance bug in your code?
+// check source app and put check point (DevTool Browser)
+   2. What are some ways you may improve your website's scrolling performance?
+// Use Debounce
+   3. Explain the difference between layout, painting and compositing.
+   7. Network (required for level 6 and above)
+   1. Traditionally, why has it been better to serve site assets from multiple domains?
+   2. Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
+   3. Explain the following request and response headers:
+   1. Diff. between Expires, Date, Age and If-Modified-...
+   2. Do Not Track
+   3. Cache-Control
+   4. Transfer-Encoding
+   5. ETag
+   6. X-Frame-Options
+   4. What are HTTP methods? List all HTTP methods that you know, and explain them.
+   8. Coding (required for level 3 and above)
+
+
+Question: What is the value of foo?
+var foo = 10 + '20'; // 1020
+Question: What will be the output of the code below?
+console.log(0.1 + 0.2 == 0.3); // false
+Question: How would you make this work? 
+add(2, 5); // 7 work
+add(2)(5); // 7 not work
+Question: What value is returned from the following statement?
+Goh angasal a m’i
+"i'm a lasagna hog".split("").reverse().join("");
+Question: What is the value of window.foo?
+   1. Nếu tồn tại foo => giá trị là window.foo
+   2. Nếu ko tồn tại foo => giá trị là ‘bar’
+( window.foo || ( window.foo = "bar" ) );
+Question: What is the outcome of the two alerts below?
+   1. ‘Hello World’
+   2. Error: bar underfined
+var foo = "Hello";
+(function() {
+ var bar = " World";
+ alert(foo + bar);
+})();
+alert(foo + bar);
+Question: What is the value of foo.length? // 2
+var foo = [];
+foo.push(1);
+foo.push(2);
+Question: What is the value of foo.x? // underfined
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+Question: What does the following code print?
+   1. One
+   2. Three
+   3. Two
+console.log('one');
+setTimeout(function() {
+ console.log('two');
+}, 0);
+console.log('three');
+Question: What is the difference between these four promises?
+   1. Kết quả trả về
+doSomething().then(function () {
+ return doSomethingElse();
+});
+
+doSomething().then(function () {
+ doSomethingElse();
+});
+
+doSomething().then(doSomethingElse());
+
+doSomething().then(doSomethingElse);
+
+
+
+
+	Front end level
+	Summary
+	
+
+Đánh giá PV
