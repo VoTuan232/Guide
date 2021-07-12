@@ -1,3 +1,5 @@
+*** Viewport trong html
+
 Viewport là khu vực hiển thị nội dung mà người dùng nhìn thấy trên website (có thể hiểu là khung nhìn). Viewport sẽ thay đổi theo thiết bị, viewport trên điện thoại di động sẽ nhỏ hơn so với trên màn hình máy tính.
 
 Viewport không chính xác sẽ khiến người dùng phải cuộn ngang trong khi duyệt web (nội dung tràn màn hình) thay vì website sẽ hiện thị hoàn hảo trên màn hình thiết bị của họ. Thông qua thẻ <meta>, các nhà thiết kế website có thể kiểm soát chế độ xem (kiểm soát kích thước và tỷ lệ của trang web).

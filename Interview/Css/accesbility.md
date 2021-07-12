@@ -1,3 +1,5 @@
++ Web Accessbility la gi ?
+
 +  “Web Accessibility” là các phương án để làm cho mọi người, bao gồm cả người khuyết tật, đều có toàn quyền truy cập vào web và Internet.
 
 A – bắt buộc

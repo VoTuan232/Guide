@@ -1,3 +1,5 @@
+*** Css preprocessor la gi ? 
+
 + Ngon ngu tien xu li css.
 + Logic hoa va cau truc doan ma css => css tien gan voi 1 ngon ngu lap trinh
 + Scss/sass/less

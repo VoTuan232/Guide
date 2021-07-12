@@ -1,3 +1,5 @@
+*** 1Rem=?px
+
 + Don vi tuyet doi: px
 + Don vi tuong doi: %, rem, bem
 
